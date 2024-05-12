@@ -1,0 +1,35 @@
+header{
+  container-type: inline-size;
+}
+
+.nav-link:hover{
+  color: $hover-color;
+}
+
+@container (width < 431px){
+  .navbar-nav{
+    text-align: center;
+  }
+  .nav-link{
+    font-size: 14px;
+  }
+}
+
+@container (width > 430px) and (width < 821px){
+  .navbar-nav{
+    text-align: center;
+  }
+  .nav-link{
+    font-size: 20px;
+  }
+}
+
+/* Versiones alternativas para navegadores que no admiten CSS Grid */
+@supports not (display: grid) {
+  header {
+      width: 100%;
+      padding: 10px;
+  }
+}
+  
+

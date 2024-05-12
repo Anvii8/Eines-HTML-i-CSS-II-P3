@@ -1,57 +1,122 @@
-* {
-  box-sizing: border-box;
+@layer defaults {
+  .containervideos h1 {
+      font-size: 3.5rem;
+  }
+}
+
+@layer utilities {
+  .containervideos h1 {
+      text-align: center;
+  }
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
   margin: 0;
-  padding: 2rem;
   font-family: $font-family-sans-serif;
   font-size: 16px;
-  line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
 }
 
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
+.logo{
+  max-width: 10%;
   height: auto;
+}
 
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
+.containervideos{
+  max-width: 100%;
+  margin-top: auto;
+  margin-bottom: 150px;
+  container-type: inline-size;
+
+  h1{
+      margin-top: 25px;
+      margin-bottom: 50px;
+      font-size: 3.5rem;
   }
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
+figure{
+  margin: 0 auto;
+  align-items: center;
+}
 
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+.navvideos{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul{
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 70%;
+      gap: 50px;
   }
 }
 
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
+.card-img-top{
+  max-width: 100%;
+  height: 522px;
 }
+
+@container (width < 431px){
+  .containervideos h1{
+      width: 100%;
+      font-size: 1.9rem;
+      margin-bottom: 0;
+  }
+  .navvideos ul{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0;
+      margin: 0 auto;
+  }
+  .card-title{
+      font-size: 23px;
+  }
+  .card-text{
+      font-size: 15px;
+  }
+}
+
+@container (width > 430px) and (width < 821px){
+  .containervideos h1{
+      font-size: 2.9rem;
+      margin-bottom: 0;
+  }
+  .navvideos ul{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+  }
+  .card-title{
+      font-size: 28px;
+  }
+  .card-text{
+      font-size: 20px;
+  }
+}
+
+@supports not (display: grid) {
+  .navvideos ul {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  @container (width < 431px){
+      .navvideos ul{
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          margin: 0 auto;
+      }
+  }
+  
+  @container (width > 430px) and (width < 821px){
+      .navvideos ul{
+          display: flex;
+          flex-direction: column;
+      }
+  }
+}
+

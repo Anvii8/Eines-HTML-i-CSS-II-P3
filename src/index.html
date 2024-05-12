@@ -4,22 +4,91 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Página donde podemos ver los diferentes chefs del concurso.">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.ico">
+    <title>Participantes</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+    <include src="./views/header.html"></include>
+    <div class="containervideos">
+        <h1>Nuestros Chefs <i class="fa-solid fa-utensils"></i></h1>
+        <nav class="navvideos">
+            <ul>
+                <li>
+                    <figure>
+                        <div class="card h-100">
+                            <source srcset="./assets/images/chef1.jpg?as=webp" type="image/webp" />
+                            <img src="./assets/images/chef1.jpg" alt="Concurso de Cocina" class="card-img-top" />
+                            <div class="card-body">
+                                <h2 class="card-title">Carlos García</h2>
+                                <p class="card-text">Carlos García es un chef apasionado de la cocina mediterránea. Con un enfoque innovador y una habilidad para combinar ingredientes frescos.</p>
+                            </div>                        
+                        </div>
+                    </figure>        
+                </li>
+                <li>
+                    <figure>
+                        <div class="card h-100">
+                            <source srcset="./assets/images/chef2.jpg?as=webp" type="image/webp" />
+                            <img src="./assets/images/chef2.jpg" alt="Concurso de Cocina" class="card-img-top" />
+                            <div class="card-body">
+                                <h2 class="card-title">Juan Pérez</h2>
+                                <p class="card-text">Juan Pérez es un chef con una pasión por la cocina latinoamericana. Viene de México y nos traerá sabores vibrantes y las técnicas tradicionales de su país.</p>    
+                            </div>
+                        </div>
+                    </figure> 
+                </li>
+                <li>
+                    <figure>
+                        <div class="card h-100">
+                            <source srcset="./assets/images/chef3.jpg?as=webp" type="image/webp" />
+                            <img src="./assets/images/chef3.jpg" alt="Concurso de Cocina" class="card-img-top" />
+                            <div class="card-body">
+                                <h2 class="card-title">Diego Rodríguez</h2>
+                                <p class="card-text">Diego Rodríguez es un chef innovador que fusiona la cocina asiática y la cocina contemporánea con resultados sorprendentes.</p>    
+                            </div>
+                        </div>
+                    </figure> 
+                </li>
+                <li>
+                    <figure>
+                        <div class="card h-100">
+                            <source srcset="./assets/images/chef4.jpg?as=webp" type="image/webp" />
+                            <img src="./assets/images/chef4.jpg" alt="Concurso de Cocina" class="card-img-top" />
+                            <div class="card-body">
+                                <h2 class="card-title">Miguel Sánchez</h2>
+                                <p class="card-text">Miguel Sánchez es un chef con un enfoque moderno de la cocina española. Con una pasión por los ingredientes frescos y la comida reconfortante.</p>
+                            </div>  
+                        </div>
+                    </figure> 
+                </li>
+                <li>
+                    <figure>
+                        <div class="card h-100">
+                            <source srcset="./assets/images/chef5.jpg?as=webp" type="image/webp" />
+                            <img src="./assets/images/chef5.jpg" alt="Concurso de Cocina" class="card-img-top" />
+                            <div class="card-body">
+                                <h2 class="card-title">Ricardo Gómez</h2>
+                                <p class="card-text">Ricardo Gómez es un chef conocido por su amor por la cocina italiana y su habilidad para crear platos que son verdaderas obras de arte.</p>                            
+                            </div>
+                        </div>
+                    </figure> 
+                </li>
+                <li>
+                    <figure>
+                        <div class="card h-100">
+                            <source srcset="./assets/images/chef6.jpg?as=webp" type="image/webp" />
+                            <img src="./assets/images/chef6.jpg" alt="Concurso de Cocina" class="card-img-top" />
+                            <div class="card-body">
+                                <h2 class="card-title">Sofía Martínez</h2>
+                                <p class="card-text">Sofía Martínez es una chef reconocida por su estilo único y su talento excepcional en la cocina francesa.</p>
+                            </div>
+                        </div>
+                    </figure> 
+                </li>
+            </ul>
+        </nav>
     </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
