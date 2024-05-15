@@ -1,14 +1,17 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+    <nav>
+        <div class="flex mx-auto flex-col gap-4 justify-between items-center md:gap-4 md:flex-col lg:flex-row py-4 px-4">
             <a class="navbar-brand" href="./index.html">
-                <img src="./assets/images/logo.ico" alt="Logo del Concurso" class="logo">
+                <img src="./assets/images/logo.ico" alt="Logo del Concurso" class="h-auto max-w-24">
             </a>
 
-            <div class="navbar flex-column" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./article.html">Información sobre el concurso</a>
+            <div class="flex flex-col" id="navbarNav">
+                <ul class="flex justify-end items-center space-x-4">
+                    <li>
+                        <a class="block px-4 py-2 text-sm md:text-base sm:text-base text-gray-700 hover:text-custom-hover" href="./article.html">Información sobre el concurso</a>
+                    </li>
+                    <li>
+                        <a class="block px-4 py-2 text-sm md:text-base sm:text-base text-gray-700 hover:text-custom-hover" href="./index.html">Página con IA</a>
                     </li>
                 </ul>
             </div>
