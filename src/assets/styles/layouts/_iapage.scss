@@ -1,0 +1,178 @@
+.bodyIA {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.headerIA {
+    color: black;
+    padding: 1rem 0;
+}
+
+.containerIA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    margin-left: 1rem;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.navbar ul li {
+    margin-left: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+}
+
+.btn-contestants {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.intro {
+    text-align: center;
+    padding: 2rem;
+}
+
+.intro .main-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin-bottom: 2rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.recipes {
+    text-align: left;
+}
+
+.recipes .cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card h4 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+}
+
+.card-content img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.text-content {
+    text-align: left;
+}
+
+.text-content .author {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.footerIA {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.footer-right {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-right .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right .column h4 {
+    margin-bottom: 0.5rem;
+}
+
+.footer-right .column ul {
+    list-style: none;
+}
+
+.footer-right .column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-right .column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-left .social-icons {
+    margin-top: 0.5rem;
+}
+
+.footer-left .social-icons a {
+    margin-left: 0.5rem;
+}
+
+.footer-left .social-icons img {
+    width: 24px;
+    height: 24px;
+}
