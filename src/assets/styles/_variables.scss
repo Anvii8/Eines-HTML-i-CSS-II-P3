@@ -16,3 +16,21 @@ $theme-colors: (
 $input-border-color: color(display-p3 0.8722 0.8722 0.8722);
 
 @layer defaults, utilities;
+
+@layer components {
+  .lista-chefs{
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6
+  }
+  .chef-card{
+    @apply bg-white rounded-lg shadow-lg overflow-hidden
+  }
+  .chef-img {
+    @apply max-w-full h-auto object-cover;
+  }
+  .chef-name{
+    @apply text-xl font-semibold
+  }
+  .textoArticulo{
+    @apply text-lg md:text-xl leading-relaxed md:leading-loose
+  }
+}
